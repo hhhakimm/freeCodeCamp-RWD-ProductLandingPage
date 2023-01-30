@@ -1,3 +1,11 @@
+:root {
+  --color-one: #d5def5;
+  --color-two: #8594e4;
+  --color-three: #6643b5;
+  --color-four: #430f58;
+  --body-margin: 0 1rem;
+}
+
 *,
 ::before,
 ::after {
@@ -10,21 +18,61 @@ html {
   box-sizing: border-box;
 }
 
-/* font-family: 'Lobster Two', cursive; */
-/* font-family: 'Fira Sans', sans-serif; */
-
 body {
-  border: 1px solid red;
-  width: 767px;
-  height: 100%;
-  margin: 0 auto;
-  /* delete above when done */
-  padding: 2rem;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: "Fira Sans", sans-serif;
+  background-color: var(--color-one);
+}
+
+#header {
+  background-color: var(--color-four);
+  padding: 1rem;
+  text-align: center;
 }
 
 h1 {
-  font-family: 'Lobster Two', cursive;
+  display: inline-block;
+  position: relative;
+  border-radius: 5px;
+  font-family: "Lobster Two", cursive;
   font-size: 2.5rem;
+  background-color: var(--color-three);
+}
+
+#nav-bar {
+  position: absolute;
+  top: 5rem;
+  right: 0;
+}
+
+#nav-bar a {
+  text-decoration: none;
+  margin-right: 1rem;
+  padding: 1ch;
+  border-radius: 5px;
+}
+
+#nav-bar a:active {
+  background-color: var(--color-three);
+  color: var(--color-one)
+}
+
+.material-symbols-outlined {
+  font-size: 2rem;
+}
+
+#form {
+  display: relative;
+  margin: 5rem 0;
   text-align: center;
+}
+
+#About_Us > h2:first-of-type {
+  text-align: center;
+  margin-bottom: 1ch;
+}
+
+#About_Us p {
+  width: 20ch;
+  text-align: justify;
+  margin: 0 auto 3rem auto;
 }
