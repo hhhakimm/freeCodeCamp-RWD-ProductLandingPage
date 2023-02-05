@@ -1,3 +1,26 @@
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 4rem;
+  }
+
+  p {
+    font-size: 2rem;
+  }
+
+  #form {
+    position: absolute;
+    left: 45rem; 
+    margin-bottom: 5rem;
+  }
+
+  #product-list > div {
+    background-color: var(--color-three);
+    display: flex;
+    flex-direction: column
+  } 
+
+}
+
 :root {
   --color-one: #d5def5;
   --color-two: #8594e4;
@@ -50,9 +73,11 @@ h2 {
 /* Nav Bar */
 
 #nav-bar {
-  position: absolute;
-  top: 5.5rem;
+  position: fixed;
+  top: 0 ;
   right: 0;
+  background-color: #6643b5;
+  border-radius: 0 0 0 10px;
 }
 
 #nav-bar a {
@@ -173,4 +198,25 @@ li:nth-child(3) > h3 > .icons {
 
 #product-list > div >button {
   margin-left: 1.5rem;
+}
+
+/* Contact Us */
+
+#Contact_Us {
+  margin-top: 5rem;
+}
+
+#Contact_Us h2 {
+  text-align: center;
+}
+
+.social-buttons {
+  padding-bottom: 1.2rem;
+  background: var(--color-three);
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 3rem;
+  padding-top: 1rem;
 }
